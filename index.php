@@ -72,9 +72,9 @@ class Color
 
     public function mix(Color $color): Color
     {
-        return new Color((($this->getRed() + $color->getRed()) / 2),
-            (($this->getGreen() + $color->getGreen()) / 2),
-            (($this->getBlue() + $color->getBlue()) / 2));
+        return new Color((int)(($this->getRed() + $color->getRed()) / 2),
+            (int)(($this->getGreen() + $color->getGreen()) / 2),
+            (int)(($this->getBlue() + $color->getBlue()) / 2));
     }
 
 
